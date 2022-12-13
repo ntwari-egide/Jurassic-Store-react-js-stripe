@@ -11,16 +11,20 @@
 
 import React, { useState } from 'react';
 import '../styles/welcome.css'
-import {BsCartCheck, BsSearch} from 'react-icons/bs'
-import { Button, Col, Image, Input, Row } from 'antd';
+import {BsCartCheck, BsSearch, BsTrash} from 'react-icons/bs'
+import { Button, Col, Drawer, Image, Input, Row } from 'antd';
 import ProductCol from '../components/Product/Product';
+import { AiOutlineDelete } from 'react-icons/ai';
+import CartItem from '../components/Cart/CartItem';
+
 
 const WelcomePage = () => {
 
+    const [cartOpen, setCartOpen] = useState(false);
 
     return (
         
-        <div className='mt-8'>
+        <div className='mt-14'>
             {/* right add to cart icon */}
             <div
                 className='h-[30vh]'
@@ -30,23 +34,27 @@ const WelcomePage = () => {
                 >
                     <BsCartCheck 
                         className='cursor-pointer'
+                        onClick={() => setCartOpen(true)}
                         color='#038C7F'
                         fontSize={23}
                     />
                 </div>
                 <h1 className='text-center font-bold text-4xl capitalize mt-[7vh] text-normal'>Jurassic Store</h1>
             </div>
+
+            {/* search bar and products */}
+
             <div
-                className=' min-h-screen background-normal px-24 pt-8'
+                className=' min-h-screen background-normal px-24 pt-8 pb-24'
             >
                 <h1 className='text-center text-second'>Browse the Catalogue</h1>
 
                 <div className="m-auto w-[50vw]">
-                    <Input className='py-2 w-full mt-8' size="small" placeholder="Search" suffix={<BsSearch />} />
+                    <Input className='py-2 w-full mt-14' size="small" placeholder="Search" suffix={<BsSearch />} />
                 </div>
 
                 <div className="m-auto w-[70vw]">
-                    <Row className='mt-8' gutter={40}>
+                    <Row className='mt-14' gutter={40}>
                         <Col span={6} >
                             <ProductCol />
                         </Col>
@@ -60,7 +68,7 @@ const WelcomePage = () => {
                             <ProductCol />
                         </Col>
                     </Row>
-                    <Row className='mt-8' gutter={40}>
+                    <Row className='mt-14' gutter={40}>
                         <Col span={6} >
                             <ProductCol />
                         </Col>
@@ -74,7 +82,7 @@ const WelcomePage = () => {
                             <ProductCol />
                         </Col>
                     </Row>
-                    <Row className='mt-8' gutter={40}>
+                    <Row className='mt-14' gutter={40}>
                         <Col span={6} >
                             <ProductCol />
                         </Col>
@@ -91,6 +99,24 @@ const WelcomePage = () => {
                 </div>
 
             </div>
+
+            {/* Cart drawer */}
+            <Drawer 
+                open={cartOpen}
+                title="Cart"
+                onClose={() => setCartOpen(false)}
+            >
+                <div>
+                    <CartItem />
+                    <CartItem />
+                    
+                    <h1 className='text-normal mt-8 font-bold'>Total : $39.98</h1>
+
+                    <Button className='button-primary mt-4 rounded-none'>
+                        Checkout
+                    </Button>
+                </div>
+            </Drawer>
             
         </div>
     )

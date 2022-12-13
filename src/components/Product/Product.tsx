@@ -6,8 +6,8 @@ const ProductCol =() => {
 
     return (
                     <div>
-                        <Image
-                            height={230}
+                            <Image
+                                height={230}
                                 width={230}
                                 src={'https://images.pexels.com/photos/4972847/pexels-photo-4972847.jpeg?auto=compress&cs=tinysrgb&w=800'}
                                 preview={false}
