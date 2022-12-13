@@ -1,4 +1,4 @@
-import { Button, Image } from 'antd';
+import { Button, Image, message } from 'antd';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../redux/cartSlice';
@@ -26,6 +26,8 @@ const ProductCol =(
                                     className='button-primary ml-4 rounded-none'
                                     onClick={() => {
                                         dispatch(addToCart(props.product));
+
+                                        message.success('Added to cart!')
                                     }}
                                 >
                                     Add To Cart

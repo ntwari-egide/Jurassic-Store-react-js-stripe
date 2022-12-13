@@ -2,27 +2,27 @@ import { Image } from 'antd';
 import React from 'react';
 import { AiOutlineDelete } from 'react-icons/ai';
 
-const CartItem = () => {
+const CartItem = (props: any) => {
     return (
         <div className='flex flex-row mt-8'>
-                    <div className='flex flex-row'>
+                    <div className='flex flex-row w-[80%]'>
                         <Image
                             height={100}
                             width={200}
-                            src={'https://image.uniqlo.com/UQ/ST3/ca/imagesgoods/444967/item/cagoods_55_444967.jpg?width=1600&impolicy=quality_75'}
+                            src={props.product.cover}
                             preview={false}
                             className='rounded'
                         />
 
                         <div className='ml-4'>
-                            <h1 className='w-[80%] font-normal'>Pullover Hoodie-  a loose fitting hooded sweater</h1>
+                            <h1 className='w-[80%] font-normal'>{props.product.title}</h1>
                             <div className='flex flex-row'>
-                                <h1 className='mt-2 font-light text-normal'>Qty: 5</h1>
-                                <h1 className='mt-2 font-light text-normal ml-auto'>$19.999</h1>
+                                <h1 className='mt-2 font-light text-normal'>Qty: 1</h1>
+                                <h1 className='mt-2 ml-8 font-light text-normal '>$1{props.product.price}</h1>
                             </div>
                         </div>
                     </div>
-                    <div className='w-[40%]'>
+                    <div className='w-[5%]'>
                         <AiOutlineDelete
                             fontSize={25}
                             color={"red"}

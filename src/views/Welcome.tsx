@@ -87,6 +87,7 @@ const WelcomePage = () => {
                 open={cartOpen}
                 title="Cart"
                 onClose={() => setCartOpen(false)}
+                width={'35vw'}
             >
                 <CartContainer />
             </Drawer>
