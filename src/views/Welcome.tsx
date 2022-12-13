@@ -3,7 +3,7 @@
  * @description: Welcome page for Jurrasic store
  */
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/welcome.css'
 import {BsCartCheck, BsSearch} from 'react-icons/bs'
 import { Button, Col, Drawer, Input, Row } from 'antd';
@@ -11,16 +11,23 @@ import ProductCol from '../components/Product/Product';
 import CartItem from '../components/Cart/CartItem';
 import { useNavigate } from 'react-router-dom';
 // src/components/Item.js
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import {addToCart} from '../redux/cartSlice';
+import { fetchProducts } from '../redux/productsSlice';
 
 
 const WelcomePage = () => {
 
     const [cartOpen, setCartOpen] = useState(false);
     const navigate = useNavigate()
-
-    const dispatch = useDispatch()
+    
+    // getting data from store
+    const dispatch = useDispatch();
+    const products = useSelector((state: any) => state.products);
+  
+    useEffect(() => {
+      dispatch(fetchProducts());
+    }, [dispatch]);
 
     return (
         
