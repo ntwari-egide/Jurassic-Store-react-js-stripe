@@ -1,7 +1,7 @@
 
   
 
-## LOT
+## Jurrasic Store
 
   
 
@@ -33,39 +33,6 @@
 
 ## [](#about-the-project)About The Project
 
-  
-
-PREVIEW OF PROJECT
-
-  
-
-### [](#filtering-data-by-state)Welcome page
-
-![enter image description here](https://res.cloudinary.com/dpqasrwfu/image/upload/v1663349173/Screen_Shot_2022-09-16_at_7.23.24_PM_cuea7k.png)
-
-### [](#filtering-data-by-country)Click on Get Started button
-
-
-![enter image description here](https://res.cloudinary.com/dpqasrwfu/image/upload/v1663349154/Screen_Shot_2022-09-16_at_7.23.38_PM_dvxujn.png)
-  
-  ### [](#filtering-data-by-country)/choose-billing-currency
-
-
-![enter image description here](https://res.cloudinary.com/dpqasrwfu/image/upload/v1663349164/Screen_Shot_2022-09-16_at_7.23.48_PM_vktovc.png)
-
-  
-### [](#filtering-data-by-country)/choose-billing-currency - Click on Finish Setup
-
-
-![enter image description here](https://res.cloudinary.com/dpqasrwfu/image/upload/v1663349281/Screen_Shot_2022-09-16_at_7.23.55_PM_ewkiwd.png)
-
-
-### [](#footer-of-covical) /stripe-configs
-
-![enter image description here](https://res.cloudinary.com/dpqasrwfu/image/upload/v1663349252/Screen_Shot_2022-09-16_at_7.24.24_PM_qnwcmk.png)
-  
-### [](#footer-of-covical) /connect-account
-![enter image description here](https://res.cloudinary.com/dpqasrwfu/image/upload/v1663349315/Screen_Shot_2022-09-16_at_7.24.35_PM_irmaej.png)
 
 #### [](#build-with)Build with
 
@@ -103,7 +70,7 @@ This is an example of how to list things you need to use the software and how to
 
   
 
-- Gitlab link: [https://github.com/ntwari-egide/stripe-app-react-ts.git](https://github.com/ntwari-egide/stripe-app-react-ts.git)
+- Github link: [https://github.com/ntwari-egide/stripe-app-react-ts.git](https://github.com/ntwari-egide/stripe-app-react-ts.git)
 
   
 
