@@ -11,9 +11,9 @@ import ProductCol from '../components/Product/Product';
 import CartItem from '../components/Cart/CartItem';
 import { useNavigate } from 'react-router-dom';
 // src/components/Item.js
-import { useDispatch, useSelector } from 'react-redux';
+import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import {addToCart} from '../redux/cartSlice';
-import { fetchProducts } from '../redux/productsSlice';
+import { AppDispatch, fetchProducts, RootState } from '../redux/productsSlice';
 
 
 const WelcomePage = () => {
@@ -28,6 +28,8 @@ const WelcomePage = () => {
     useEffect(() => {
       dispatch(fetchProducts());
     }, [dispatch]);
+
+    console.log('data:  ', products.list)
 
     return (
         
@@ -73,7 +75,11 @@ const WelcomePage = () => {
                             </div>
                         </Col>
                         <Col span={6} >
-                            <ProductCol />
+                            <ProductCol 
+                                imageUrl={'https://image.uniqlo.com/UQ/ST3/ca/imagesgoods/444967/sub/cagoods_444967_sub1.jpg?width=1600&impolicy=quality_75'}
+                                prodName='Pullover Hoodie-  a loose fitting hooded sweater'
+                                price={100}
+                            />
                         </Col>
                         <Col span={6} >
                             <ProductCol />
@@ -138,5 +144,7 @@ const WelcomePage = () => {
         </div>
     )
 }
-
+// Use throughout your app instead of plain `useDispatch` and `useSelector`
+export const useAppDispatch: () => AppDispatch = useDispatch
+export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
 export default WelcomePage;

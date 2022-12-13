@@ -1,5 +1,6 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { AnyAction, createSlice } from "@reduxjs/toolkit";
 import _products from "../data/products";
+import store from "./store";
 
 const initialState = { loading: false, list: [] };
 
@@ -20,7 +21,7 @@ const productsSlice = createSlice({
 
 export const { startFetch, save } = productsSlice.actions;
 
-export const fetchProducts = () => async (dispatch: any) => {
+export const fetchProducts = () => async (dispatch) => {
   dispatch(save([]));
   dispatch(startFetch());
 
@@ -36,3 +37,9 @@ export const fetchProducts = () => async (dispatch: any) => {
 const productsReducer = productsSlice.reducer;
 
 export default productsReducer;
+// Infer the `RootState` and `AppDispatch` types from the store itself
+export type RootState = ReturnType<typeof store.getState>
+// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
+export type AppDispatch = typeof store.dispatch
+
+
