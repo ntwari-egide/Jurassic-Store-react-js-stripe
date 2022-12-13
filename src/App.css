@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  background-color: #F2F2F2;
+}
+
+.background-normal{
+  background-color: #dee7f0bd;
+}
+.text-normal{
+  color: #025951;
+}
+
+.text-second{
+  color: #0D0D0D;
+}
+
+.button-primary{
+  font-size: 10px;
+    background-color: #025951 !important;
+    color: white;
+    height: 47px;
+    width: 154px;
+}

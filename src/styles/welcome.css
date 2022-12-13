@@ -1,0 +1,380 @@
+.header-section {
+    background: #1A1A1A;
+    height: 6vh;
+    width: 100vw;
+}
+
+.main-container {
+    /* border: 1px solid red; */
+    width: 60vw;
+    padding-top: 2em;
+    margin: auto;
+}
+
+span.title-header {
+    font-weight: bold;
+    color: #000000 !important;
+}
+
+.main-container p{
+    font-size: 13px;
+    color: #555555;
+}
+
+.flex-left.doc-link {
+    float: left;
+    font-weight: bold;
+    color: #000000 !important;
+    margin-left: 14%;
+}
+
+.flex-left.doc-link svg {
+    margin-top: 1em;
+    font-weight: bold;
+    margin-left: 0.5em;
+}
+
+.upper-part-cotainer{
+    border-bottom: 1px solid #E6E6E6;
+    height: 7vh;
+}
+
+.left-div{
+    width: 80%;
+}
+
+.right-div{
+    width: 8%;
+}
+
+.bg-white{
+    background-color: white;
+    padding: 1.5em;
+}
+
+.content-container.bg-white {
+    margin-top: 1em;
+    border: none;
+    border-radius: 10px;
+    /* height: 69vh; */
+}
+
+.text-bold-small {
+    font-size: 12px !important;
+}
+
+.flex-left.doc-link {
+    float: left;
+    font-weight: bold;
+    color: #000000;
+    margin-left: 14%;
+}
+
+.flex-left.doc-link.right-div.steps p {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.step {
+    height: 4px;
+    width: 4px;
+    margin: 0 2px;
+    background-color: #333333;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+
+  .flex-left.doc-link.right-div.steps.width12 {
+    margin-left: 34%;
+}
+
+.content {
+    background-color: #F9F9F9;
+    /* height:60vh; */
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    border-radius: 4px;
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.stripe-container {
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    background: #EAF1FE;
+    border-radius: 50%;
+}
+
+.stripe-container h1 {
+    color: #635BFF;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 40%;
+}
+
+.m-auto {
+    margin: auto !important;
+}
+
+.content .connect-header{
+    text-align: center;
+    font-weight: 700;
+    font-size:19px;
+    margin-top: 30px;
+}
+
+.content .details-description{
+    text-align: center;
+    font-size: 12px;
+    color: #555555;
+    width: 49%;
+    line-height: 28px;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.transaction-container{
+    width: 40%;
+    border-radius: 10px;
+    padding: 5px !important;
+    padding-left: 20px !important;
+    margin: auto;
+    padding-right: 1em !important;
+}
+
+.transaction-container p:first-child {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.transaction-amount{
+    color: #555555;
+    margin-left: auto;
+    font-weight: 700
+}
+
+.button {
+    background-color: #286EF1;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    height: 3em;
+    width: 12vw;
+    font-weight: 700;
+    margin-top: 3em;
+    font-size: 11px;
+    cursor: pointer;
+    margin-left: 22vw;
+}
+
+.button:hover{
+    transform: scale(1.08);
+    transition: ease-in-out 0.3s;
+}
+
+.findout-link{
+    color: #286EF1 !important;
+    text-align:center;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.banner-container{
+    background-color: #D5E3FD;
+    padding: 1em 1.5em;
+    border-radius: 6px;
+    margin-top: 14px;
+}
+.icon-container{
+    background-color: #286EF1;
+    border-radius: 50%;
+    padding: 20px;
+    width: 23px;
+}
+
+.banner-container p {
+    font-size: 10px !important;
+    margin-left: 21px;
+    color: black;
+}
+
+.banner-container p:first-child{
+    font-weight: 700;
+    font-size: 12px !important;
+}
+
+.banner-container .button {
+    width: 7em;
+    margin-top: 16px;
+}
+
+.nav-links{
+    margin-top: 1em;
+}
+
+.nav-links div p{
+    color: #555555;
+    font-size: 12px;
+    font-weight: 500;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.nav-links p:first-child{
+    padding-left: 0px;
+    border-right: 1px solid #E6E6E6;
+}
+
+.nav-links div svg{
+    padding-top: 12px;
+    margin-left: 10px;
+
+}
+
+.configure-button {
+    cursor: pointer; 
+    background: #E6E6E6;
+    border-radius: 4px;
+    padding-bottom: 4px;
+    margin-left: auto;
+    height: 2em;
+    margin-top: 3px;
+
+}
+.configure-button p{
+    color: #000000 !important; 
+}
+
+.force-whitebg{
+    background-color: #FFFFFF !important;
+}
+
+/*implement responsive*/
+@media only screen and (max-width: 600px) {
+    .main-container {
+        width: 80vw;
+    }
+    .content-container.bg-white {
+        margin-top: 1em;
+        border: none;
+        border-radius: 10px;
+        /* height: 69vh; */
+    }
+    .flex-left.doc-link.right-div.steps.width12 {
+        margin-left: 28%;
+        width: 30vw !important;
+    }
+    .button {
+        width: 30vw;
+        font-size: 10px;
+        margin-left: 28%;
+    }
+    .content .details-description {
+        width: 80%;
+        line-height: 16px;
+    }
+    .transaction-container {
+        width: 80%;
+    }
+    .content {
+        padding-top: 1em;
+    }
+    .content .connect-header {
+        font-size: 16px;
+    }
+    .content .details-description {
+        font-size: 10px;
+    }
+    .transaction-container p:first-child {
+        font-size: 10px;
+    }
+    .transaction-amount {
+        font-size: 10px;
+    }
+    .button {
+        width: 30vw;
+        font-size: 10px;
+    }
+    .findout-link {
+        font-size: 8px !important;
+    }
+    .nav-links div p{
+        display: none;
+    }
+
+    .nav-links div p:first-child{
+        display: block;
+    }
+
+    .nav-links div:nth-child(5){
+        padding: 0px !important;
+        width: 36px;
+    }
+}
+
+/* implement tablet responsive */
+@media only screen and (min-width: 600px) and (max-width: 968px) {
+    .main-container {
+        width: 80vw;
+    }
+
+    .content-container.bg-white {
+        margin-top: 1em;
+        border: none;
+        border-radius: 10px;
+        /* height: 69vh; */
+    }
+    .flex-left.doc-link.right-div.steps.width12 {
+        margin-left: 28%;
+        width: 30vw !important;
+    }
+    .button {
+        width: 30vw;
+        font-size: 10px;
+        margin-left: 28%;
+    }
+    .content .details-description {
+        width: 80%;
+        line-height: 16px;
+    }
+    .transaction-container {
+        width: 80%;
+    }
+    .content {
+        padding-top: 1em;
+    }
+    .content .connect-header {
+        font-size: 16px;
+    }
+    .content .details-description {
+        font-size: 10px;
+    }
+    .transaction-container p:first-child {
+        font-size: 10px;
+    }
+    .transaction-amount {
+        font-size: 10px;
+    }
+    .button {
+        width: 30vw;
+        font-size: 10px;
+    }
+    .findout-link {
+        font-size: 8px !important;
+    }
+}

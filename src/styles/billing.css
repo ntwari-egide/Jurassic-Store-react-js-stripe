@@ -1,0 +1,94 @@
+.small-size {
+    font-size: 10px;
+    color: #555555;
+}
+
+.icon-cover {
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    padding: 5px;
+    border-radius: 4px;
+    margin-left: 2vw;
+}
+
+.small-size span{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.small-size:hover{
+    transform: scale(1.02);
+    transition: ease-in-out 0.4s;
+}
+.text-center{
+    text-align: center;
+}
+
+.warning {
+    color: #000000;
+    font-weight: 300;
+    width: 54%;
+    background-color: #FCF4E6;
+    padding: 10px;
+    margin: auto;
+}
+
+.warning p {
+    font-size: 11px !important;
+    color: black !important;
+}
+
+ select {
+    width: 45%;
+    background-color: #FFFFFF;
+    border: none;
+    margin: 2em 27%;
+    padding: 1em 1em;
+    outline: 1px solid #E6E6E6;
+    border-radius: 4px;
+    font-weight: 200;
+}
+
+.check-agreement {
+    width: 26vw;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.check-agreement span{
+    color: #555555;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.color-less-button{
+    background-color: #F5F5F5 !important;
+    color: #6B6B6B;
+    border: 1px solid #E6E6E6;;
+}
+
+.success-message-contaier {
+    background-color: #E6E6E6;
+    width: 13em;
+    position: absolute;
+    top: 83vh;
+    left: 1em;
+    padding: 5px 20px;
+    transition: ease-in-out 0.6s;
+}
+
+.message-1{
+    font-size: 12px !important;
+    color: #000000 !important;
+}
+
+.success-message-contaier .time{
+    font-size: 7px !important;
+}
+
+.success-message-contaier .icon{
+    width: 2em;
+    margin-top: 2em;
+}
+
+/*  implement mobile responsiveness */
