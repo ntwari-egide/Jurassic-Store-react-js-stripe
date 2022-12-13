@@ -14,6 +14,7 @@ import { useNavigate } from 'react-router-dom';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import {addToCart} from '../redux/cartSlice';
 import { AppDispatch, fetchProducts, RootState } from '../redux/productsSlice';
+import CartContainer from '../components/Cart/CartContainer';
 
 
 const WelcomePage = () => {
@@ -28,8 +29,6 @@ const WelcomePage = () => {
     useEffect(() => {
       dispatch(fetchProducts());
     }, [dispatch]);
-
-    console.log('data:  ', products.list)
 
     return (
         
@@ -64,57 +63,20 @@ const WelcomePage = () => {
 
                 <div className="m-auto w-[70vw]">
                     <Row className='mt-14' gutter={40}>
-                        <Col span={6} >
-                            <div
-                                // onClick={
-                                //     () => 
-                                    // dispatch(addToCart(null))
-                                // }
-                            >
-                                <ProductCol />
-                            </div>
-                        </Col>
-                        <Col span={6} >
-                            <ProductCol 
-                                imageUrl={'https://image.uniqlo.com/UQ/ST3/ca/imagesgoods/444967/sub/cagoods_444967_sub1.jpg?width=1600&impolicy=quality_75'}
-                                prodName='Pullover Hoodie-  a loose fitting hooded sweater'
-                                price={100}
-                            />
-                        </Col>
-                        <Col span={6} >
-                            <ProductCol />
-                        </Col>
-                        <Col span={6} >
-                            <ProductCol />
-                        </Col>
-                    </Row>
-                    <Row className='mt-14' gutter={40}>
-                        <Col span={6} >
-                            <ProductCol />
-                        </Col>
-                        <Col span={6} >
-                            <ProductCol />
-                        </Col>
-                        <Col span={6} >
-                            <ProductCol />
-                        </Col>
-                        <Col span={6} >
-                            <ProductCol />
-                        </Col>
-                    </Row>
-                    <Row className='mt-14' gutter={40}>
-                        <Col span={6} >
-                            <ProductCol />
-                        </Col>
-                        <Col span={6} >
-                            <ProductCol />
-                        </Col>
-                        <Col span={6} >
-                            <ProductCol />
-                        </Col>
-                        <Col span={6} >
-                            <ProductCol />
-                        </Col>
+                            
+                                {/* <ProductCol /> */}
+
+                                {
+                                    products.list.map( (product: { id: React.Key | null | undefined; cover: any; title: any; price: any; }) => {
+                                        return (
+                                            <Col span={6} className="mt-8" key={product.id}>
+                                                <ProductCol 
+                                                    product={product}
+                                                />
+                                            </Col>
+                                        )
+                                    })
+                                }
                     </Row>
                 </div>
 
@@ -126,19 +88,7 @@ const WelcomePage = () => {
                 title="Cart"
                 onClose={() => setCartOpen(false)}
             >
-                <div>
-                    <CartItem />
-                    <CartItem />
-                    
-                    <h1 className='text-normal mt-8 font-bold'>Total : $39.98</h1>
-
-                    <Button 
-                        className='button-primary mt-4 rounded-none'
-                        onClick={() => navigate('/checkout')}
-                    >
-                        Checkout
-                    </Button>
-                </div>
+                <CartContainer />
             </Drawer>
             
         </div>
