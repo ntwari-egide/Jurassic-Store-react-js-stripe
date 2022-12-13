@@ -6,9 +6,16 @@
 
 import { Button, Input } from 'antd'
 import React from 'react'
+import { useSelector } from 'react-redux';
 import CartItem from '../components/Cart/CartItem'
+import { cartTotalPriceSelector } from '../redux/selectors';
 
 const CheckoutView = () => {
+
+    const cart = useSelector((state: any) => state.cart);
+    const totalPrice = useSelector(cartTotalPriceSelector);
+
+    console.log('Data: ', cart)
 
     return (
         <div className='pt-24'>
@@ -32,11 +39,18 @@ const CheckoutView = () => {
                     <h1 className='text-normal text-lg text-second ml-auto font-medium'>Cart</h1>
 
                     <div>
-                    <CartItem />
-                    <CartItem />
-                    <CartItem />
+                    {
+                        cart.map((item: any) => {
+                            return (
+                                <CartItem 
+                                    key={item.id}
+                                    product={item}
+                                />
+                            )
+                        })
+                    }
                     
-                    <h1 className='text-normal mt-8 font-bold'>Total : $59.97</h1>
+                    <h1 className='text-normal mt-8 font-bold'>Total : ${totalPrice}</h1>
                 </div>
                 </div>
             </div>
