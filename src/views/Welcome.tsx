@@ -10,12 +10,17 @@ import { Button, Col, Drawer, Input, Row } from 'antd';
 import ProductCol from '../components/Product/Product';
 import CartItem from '../components/Cart/CartItem';
 import { useNavigate } from 'react-router-dom';
+// src/components/Item.js
+import { useDispatch } from 'react-redux';
+import {addToCart} from '../redux/cartSlice';
 
 
 const WelcomePage = () => {
 
     const [cartOpen, setCartOpen] = useState(false);
     const navigate = useNavigate()
+
+    const dispatch = useDispatch()
 
     return (
         
@@ -51,7 +56,14 @@ const WelcomePage = () => {
                 <div className="m-auto w-[70vw]">
                     <Row className='mt-14' gutter={40}>
                         <Col span={6} >
-                            <ProductCol />
+                            <div
+                                // onClick={
+                                //     () => 
+                                    // dispatch(addToCart(null))
+                                // }
+                            >
+                                <ProductCol />
+                            </div>
                         </Col>
                         <Col span={6} >
                             <ProductCol />

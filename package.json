@@ -10,12 +10,14 @@
     "test": "mocha"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.1",
     "antd": "^5.0.6",
     "mocha": "^10.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-loader-spinner": "^5.3.4",
+    "react-redux": "^8.0.5",
     "react-router-dom": "^6.4.0",
     "redux-persist": "^6.0.0"
   },
