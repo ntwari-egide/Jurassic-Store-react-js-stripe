@@ -48,6 +48,10 @@
 
 - Vite
 
+- Redux
+
+- Stripe payment
+
   
 
 ## [](#getting-started)Getting Started
@@ -70,7 +74,7 @@ This is an example of how to list things you need to use the software and how to
 
   
 
-- Github link: [https://github.com/ntwari-egide/stripe-app-react-ts.git](https://github.com/ntwari-egide/stripe-app-react-ts.git)
+- Github link: [https://github.com/ntwari-egide/Jurassic-Store-react-js-stripe](https://github.com/ntwari-egide/Jurassic-Store-react-js-stripe)
 
   
 
@@ -117,4 +121,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Egide Ntwari - [ntwali_egides](https://twitter.com/ntwali_egides) 
   
 
-Project Link: [Stripe github link][https://github.com/ntwari-egide/stripe-app-react-ts/](https://github.com/ntwari-egide/stripe-app-react-ts/))
+Project Link: [Stripe github link][https://github.com/ntwari-egide/Jurassic-Store-react-js-stripe](https://github.com/ntwari-egide/Jurassic-Store-react-js-stripe))
