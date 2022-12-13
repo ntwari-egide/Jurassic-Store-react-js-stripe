@@ -1,9 +1,3 @@
-
-/**
- * @author: ntwari egide
- * @description: Welcome page for swipe
- */
-
 /**
  * @author:  Egide
  * @description: Welcome page for Jurrasic store
@@ -11,16 +5,17 @@
 
 import React, { useState } from 'react';
 import '../styles/welcome.css'
-import {BsCartCheck, BsSearch, BsTrash} from 'react-icons/bs'
-import { Button, Col, Drawer, Image, Input, Row } from 'antd';
+import {BsCartCheck, BsSearch} from 'react-icons/bs'
+import { Button, Col, Drawer, Input, Row } from 'antd';
 import ProductCol from '../components/Product/Product';
-import { AiOutlineDelete } from 'react-icons/ai';
 import CartItem from '../components/Cart/CartItem';
+import { useNavigate } from 'react-router-dom';
 
 
 const WelcomePage = () => {
 
     const [cartOpen, setCartOpen] = useState(false);
+    const navigate = useNavigate()
 
     return (
         
@@ -112,7 +107,10 @@ const WelcomePage = () => {
                     
                     <h1 className='text-normal mt-8 font-bold'>Total : $39.98</h1>
 
-                    <Button className='button-primary mt-4 rounded-none'>
+                    <Button 
+                        className='button-primary mt-4 rounded-none'
+                        onClick={() => navigate('/checkout')}
+                    >
                         Checkout
                     </Button>
                 </div>

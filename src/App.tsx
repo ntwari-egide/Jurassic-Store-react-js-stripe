@@ -6,9 +6,7 @@ import {
 
 } from 'react-router-dom'
 import WelcomePage from './views/Welcome'
-import BillingCurrency from './views/BillingCurrency'
-import StripeConfiguration from './views/StripeConfiguration'
-import ConnectStripeAccount from './views/ConnectStripeAccount'
+import CheckoutView from './views/Checkout'
 
 function App() {
 
@@ -16,9 +14,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<WelcomePage />} />
-        <Route path="/choose-billing-currency" element={<BillingCurrency />} />
-        <Route path="/stripe-configs" element={<StripeConfiguration />} />
-        <Route path="/connect-account" element={<ConnectStripeAccount />} />
+        <Route path="/checkout" element={<CheckoutView />} />
       </Routes>
     </Router>
   )
