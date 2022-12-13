@@ -9,7 +9,7 @@ const CartItem = () => {
                         <Image
                             height={100}
                             width={200}
-                            src={'https://images.pexels.com/photos/4972847/pexels-photo-4972847.jpeg?auto=compress&cs=tinysrgb&w=800'}
+                            src={'https://image.uniqlo.com/UQ/ST3/ca/imagesgoods/444967/item/cagoods_55_444967.jpg?width=1600&impolicy=quality_75'}
                             preview={false}
                             className='rounded'
                         />
